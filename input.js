@@ -31,6 +31,12 @@ const handleUserInput = (key) => {
   if (key === 'd') {
     conn.write(`Move: right`)
   }
+  if (key === 'g') {
+    conn.write(`Say: What's good?`)
+  }
+  if (key === 'b') {
+    conn.write(`Say: Bye Y'all.`)
+  }
 };
 
 
