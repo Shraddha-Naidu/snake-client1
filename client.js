@@ -10,6 +10,12 @@ const connect =  function () {
 
   // interprets incoming data to text (decodes)
   connection.setEncoding("utf-8");
+  
+  
+  connection.on("connect", () => {
+    console.log(`Connected to 🐍 game server!`);
+    connection.write("Name: SN");
+  });
 
   connection.on("data", message => {
     console.log(message)
