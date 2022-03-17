@@ -25,8 +25,5 @@ const connect =  function () {
   return connection;
 };
 
-console.log("Connecting ... ⏳")//Prints to console indicating that connection to server is being made
-connect();
-
 //EXPORT
 module.exports = { connect };
