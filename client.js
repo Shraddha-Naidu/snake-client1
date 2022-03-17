@@ -15,6 +15,7 @@ const connect =  function () {
   connection.on("connect", () => {
     console.log(`Connected to 🐍 game server!`);
     connection.write("Name: SN");
+    connection.write("Move: up");
   });
 
   connection.on("data", message => {
